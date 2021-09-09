@@ -61,7 +61,6 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
@@ -76,9 +75,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke init_text_recognition workflow" sap:VirtualizedContainerService.HintSize="798,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="init_text_recognition.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="x:String" x:Key="login_issuse">
-          <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="new_excep" />
-        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="login_issuse">[new_excep]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <If Condition="[new_excep = &quot;Login Page Not Found&quot;]" sap:VirtualizedContainerService.HintSize="798,632" sap2010:WorkflowViewState.IdRef="If_1">
